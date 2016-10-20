@@ -299,7 +299,7 @@ padding-top: 4px;
 }
 
 li{
-float: left;
+
 list-style-type: none;
 padding: 13px;
 background: #003f5e;
@@ -307,6 +307,29 @@ margin: 3px;
 border-radius: 7px;
 box-shadow: inset 0px 0px 10px white;
 margin-top: 7px;
+}
+
+#lect li>a{
+	display: block;
+	position: relative;
+}
+
+#lect >li{
+	float: left;
+	position: relative;
+}
+
+#lect >li>ul{	
+	display: none;
+	padding-bottom: -5px;
+}
+
+#lect >li:hover>ul{
+	display: block; /*acomoda en columna o en bloque*/
+	position: absolute; /*no se mueve*/
+	width: 100px;
+	padding: 8px 0px 0px 0px;
+	left: -10px;
 }
 
 section{
@@ -411,7 +434,7 @@ color: #333;
 }
 
 p::selection{
-background-color: orangered;
+background-color: orange red;
 }
 
 /*JDG*/
@@ -456,13 +479,14 @@ line-height: 1.5em;
 }
 
 .foto{
-width: 120px;
+width: 100px;
 float:left;
-border-radius: 10px; 
+border-radius: 10px;
+margin-top: inherit; 
 }
 
 .jdaut p{
-background-image: url(../img/fondo.jpg);
+background-image: url(../img/fondo2.png);
 background-repeat: no-repeat;
 background-size: cover;
 height: 90px;
@@ -472,7 +496,7 @@ margin-left: 180px;
 }
 
 .jdsec {
-background-image: url(../img/fondo.jpg);
+background-image: url(../img/fondo2.png);
 background-repeat: no-repeat;
 background-size: cover;
 width: 700px;
